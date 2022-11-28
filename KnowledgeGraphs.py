@@ -3,6 +3,11 @@ from spacy.lang.en import English
 import networkx as nx
 import matplotlib.pyplot as plt
 
+# pip install spacy
+# python -m spacy download en_core_web_sm
+# pip install networkx
+# pip install matplotlib
+
 def getSentences(text):
     nlp = English()
     nlp.add_pipe(nlp.create_pipe('sentencizer'))
